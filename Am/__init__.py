@@ -71,6 +71,7 @@ if ENV:
     BOT_NAME = os.environ.get("BOT_NAME","Sophia")
     CHAT_GROUP = os.environ.get("CHAT_GROUP","AM_YTSUPPORT")
     GBANS = os.environ.get("GBANS","Logs_Gban")
+    OWNER_USERNAME = os.environ.get("OWNER_USERNAME","AM_YTBOTT")
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT","AM_YTSUPPORT")
     DEL_CMDS = bool(os.environ.get("DEL_CMDS", True))
     INFOPIC = bool(os.environ.get("INFOPIC", False))
@@ -114,6 +115,7 @@ else:
     DB_URI = Config.DATABASE_URL
     STRICT_GBAN = Config.STRICT_GBAN
     BOT_USERNAME = Config.BOT_USERNAME
+    OWNER_USERNAME = Config.OWNER_USERNAME
     BOT_NAME = Config.BOT_NAME
     WORKERS = Config.WORKERS
     DEL_CMDS = Config.DEL_CMDS
