@@ -1,7 +1,7 @@
-# AMGroupManagerBOT
+# AM Group Manager BOT
 
 <h2 align="center">
-    ──「 AMGroupManagerBOT 2 」──
+    ──「 AM Group Manager BOT 」──
 </h2>
 
 <p align="center">
