@@ -167,13 +167,6 @@ def start(update: Update, context: CallbackContext):
     ],
     [
         InlineKeyboardButton(text="ᴛᴏᴏʟꜱ", callback_data="tools_back"),
-        InlineKeyboardButton(
-            text="ɢʙᴀɴꜱ ʟᴏɢꜱ", url="https://t.me/{GBANS}"
-        ),
-    ],
-    [
-        InlineKeyboardButton(text="ᴏᴡɴᴇʀ 💕", url="https://t.me/{OWNER_USERNAMR}"),
-        InlineKeyboardButton(text="💌 ᴄʜᴀᴛ ɢʀᴏᴜᴘ", url="https://t.me/{CHAT_GROUP}"),
     ],
     [
         InlineKeyboardButton(text="ʜᴇʟᴘꜱ & ᴄᴏᴍᴍᴀɴᴅꜱ❔", callback_data="help_back"),
@@ -196,10 +189,10 @@ def start(update: Update, context: CallbackContext):
                 [
                     InlineKeyboardButton(
                         text="SUPPORT", 
-                        url=f"https://t.me/{SUPPORT_CHAT}"),
+                        url=f"https://t.me/AM_YTSUPPORT"),
                     InlineKeyboardButton(
                         text="Gbans", 
-                        url=f"https://t.me/{GBANS}")
+                        url=f"https://t.me/Logs_Gban")
                     
                 ],
                 
@@ -236,8 +229,8 @@ def Am_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                    [
-                     InlineKeyboardButton(text="Support", url="t.me/{SUPPORT_CHAT}"),
-                     InlineKeyboardButton(text="News", url="t.me/{UPDATES}"),
+                     InlineKeyboardButton(text="Support", url="t.me/AM_YTSUPPORT"),
+                     InlineKeyboardButton(text="News", url="t.me/AMBOTYT"),
                    ],
                    [
                     InlineKeyboardButton(text="Back", callback_data="Am_back")
@@ -265,10 +258,6 @@ def Am_about_callback(update: Update, context: CallbackContext):
         InlineKeyboardButton(
             text="ʙᴏᴛ ɪɴꜰᴏ", callback_data="Am_"
         ),
-    ],
-    [
-        InlineKeyboardButton(text="ᴏᴡɴᴇʀ 💕", url="https://t.me/{OWNER_USERNAME}"),
-        InlineKeyboardButton(text="💌 ᴄʜᴀᴛ ɢʀᴏᴜᴘ", url="https://t.me/{CHAT_GROUP}"),
     ],
     [
         InlineKeyboardButton(text="ʜᴇʟᴘꜱ & ᴄᴏᴍᴍᴀɴᴅꜱ❔", callback_data="help_back"),
