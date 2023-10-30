@@ -1,0 +1,133 @@
+{
+    "name": "AmRobot",
+    "description": "Telegram group management bot.",
+    "keywords": [
+       "telegram",
+       "anime",
+       "group",
+       "manager",
+       "Am"
+    ],   
+ "repository": "https://github.com/noob-kittu/AmRobot",
+ "addons": [
+    {
+       "options": {
+          "version": "12"
+       },
+       "plan": "heroku-postgresql"
+    }
+ ],
+ "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ],
+ "env": {
+    "TOKEN": {
+       "description": "Your bot token. Get one from @BotFather duh",
+       "required": true,
+       "value": "5808748296:AAGqmRPuBxl47viDpKFVirgX-eL__ojIlZg"
+    },
+    "API_ID": {
+       "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
+       "required": true,
+       "value": "3160248"
+    },
+    "API_HASH": {
+       "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
+       "required": true,
+       "value": "da866bcad3446898c4d4a20fa10b9d09"
+    },    
+    "DATABASE_URL": {
+       "description": "Your postgres sql db, empty this field if you dont have one.",
+       "required": false,
+       "value": ""
+    },      
+    "OWNER_ID": {
+       "description": "Your user ID as an integer.",
+       "required": true,
+       "value": ""
+    },
+    "GBANS": {
+      "description": "Your gbans channel / group username without @.",
+      "required": true,
+      "value": "AMBOTYT"
+   },
+   "UPDATES": {
+      "description": "bot updates channel username without @",
+      "required": true,
+      "value": "AMBOTYT"
+   },
+   "CHAT_GROUP": {
+      "description": "Add Your chatting group link like  t.me/+bjbhb to use : +bjbhb ",
+      "required": true,
+      "value": "AM_YTSUPPORT"
+   },
+    "BOT_NAME": {
+       "description": "Insert below your bot, it will appear everywhere",
+       "required": true,
+       "value": ""
+    },
+    "OWNER_USERNAME": {
+       "description": "Your username without the @",
+       "value": ""
+    },
+    "SUPPORT_CHAT": {
+       "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to masha support than consider you made an enemy.",
+       "required": true,
+       "value": "AM_YTSUPPORT"
+    },      
+    "PHOTO": {
+       "description": "Your Telegram Bot Image (Add Link Only).",
+       "required": true,
+       "value": "https://graph.org/file/2d3f35226a0d59cbb9980.jpg"
+    },      
+    "DEV_USERS": {
+       "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Masha support then keep the current ID's here at they are and add yours.",
+       "required": false,
+       "value": "6204761408"
+    },
+    "INSPECTOR": {
+       "description": "A space separated list of user IDs who you want to assign as inspector users.",
+       "required": false,
+       "value": "6204761408"
+    },
+    "REQUESTER": {
+       "description": "A space separated list of user IDs who you wanna assign as requester(gban perms only).",
+       "required": false,
+       "value": "5360305806"
+    },
+    "ENV": {
+       "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
+       "value": "ANYTHING"
+    },
+    "WEBHOOK": {
+       "description": "Setting this to ANYTHING will enable webhooks. If you dont know how this works leave it as it is",
+       "required": false,
+       "value": ""
+    },
+    "PORT": {
+       "description": "Port to use for your webhooks. Better leave this as it is on heroku",
+       "required": false,
+       "value": ""
+    },
+    "URL": {
+       "description": "The Heroku App URL :-  https://<appname>.herokuapp.com/",
+       "required": false,
+       "value": ""
+    },
+    "No_LOAD": {
+       "description": "Dont load these modules cause they shit, space separation",
+       "required": false,
+       "value": ""
+    }, 
+    "ALLOW_EXCL": {
+       "description": "Set this to True if you want ! to be a command prefix along with /. Recommended is True",
+       "value": "True"
+    }
+    
+ }
+}

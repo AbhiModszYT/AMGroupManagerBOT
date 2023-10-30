@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  kora:
+    build: .
+    image: kora
+    container_name: kora
+    networks:
+      - bot
+      - databases
+
+networks:
+  bot:
+    name: kora
+  databases:
+    external: true
