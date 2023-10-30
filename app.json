@@ -8,7 +8,7 @@
        "manager",
        "Am"
     ],   
- "repository": "https://github.com/noob-kittu/AmRobot",
+ "repository": "https://github.com/AbhiModszYT/AMGroupManagerBOT",
  "addons": [
     {
        "options": {
@@ -40,12 +40,7 @@
        "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
        "required": true,
        "value": "da866bcad3446898c4d4a20fa10b9d09"
-    },    
-    "DATABASE_URL": {
-       "description": "Your postgres sql db, empty this field if you dont have one.",
-       "required": false,
-       "value": ""
-    },      
+    },         
     "OWNER_ID": {
        "description": "Your user ID as an integer.",
        "required": true,
