@@ -180,7 +180,7 @@ def gban(update: Update, context: CallbackContext):
         chat_origin = "<b>{}</b>\n".format(chat.id)
 
     log_message = (
-        f"*New Gban Request in Kora*\n"
+        f"*New Gban Request in AMBOT*\n"
         f"#GBAN_REQUEST\n"
         f"<b>Originated from:</b> <code>{chat_origin}</code>\n"
         f"<b>Request Admin:</b> {mention_html(user.id, user.first_name)}\n"
@@ -329,7 +329,7 @@ def agban(update: Update, context: CallbackContext) -> str:
                 user_id, "#EVENT"
                 "You have been marked as Malicious and as such have been banned from any future groups we manage. get some life bruh."
                 f"\n<b>Reason:</b> <code>{html.escape(reason)}</code>"
-                f"</b>Appeal Chat:</b> @{SUPPORT_CHAT}",
+                f"</b>Appeal Chat:</b> @AM_YTSUPPORT",
                 parse_mode=ParseMode.HTML)
         except:
             pass  # bot probably blocked by user
@@ -528,7 +528,7 @@ def scan(update: Update, context: CallbackContext):
             "#EVENT"
             "You have been marked as Malicious and as such have been banned from any future groups we manage."
             f"\n<b>Reason:</b> <code>{html.escape(user.reason)}</code>"
-            f"</b>Appeal Chat:</b> @{SUPPORT_CHAT}",
+            f"</b>Appeal Chat:</b> @AM_YTSUPPORT",
             parse_mode=ParseMode.HTML,
         )
     except:
@@ -684,7 +684,7 @@ def check_and_ban(update, user_id, should_message=True):
             text = (
                 f"<b>Alert</b>: this user is globally banned.\n"
                 f"<code>*bans them from here*</code>.\n"
-                f"<b>Appeal chat</b>: @{SUPPORT_CHAT}\n"
+                f"<b>Appeal chat</b>: @AM_YTSUPPORT\n"
                 f"<b>User ID</b>: <code>{user_id}</code>"
             )
             user = sql.get_gbanned_user(user_id)
@@ -773,7 +773,7 @@ def __user_info__(user_id):
         user = sql.get_gbanned_user(user_id)
         if user.reason:
             text += f"\n<b>Reason:</b> <code>{html.escape(user.reason)}</code>"
-        text += f"\n<b>Appeal Chat:</b> @{SUPPORT_CHAT}"
+        text += f"\n<b>Appeal Chat:</b> @AM_YTSUPPORT"
     else:
         text = text.format("???")
     return text
