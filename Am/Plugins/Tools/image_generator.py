@@ -175,7 +175,7 @@ def mangadown(client, message):
             message.reply_photo(
                 photo=f"{x}",
                 caption=
-                f"**Prompt** - `{msg}`\n**Requested by [{message.from_user.first_name}](tg://user?id={message.from_user.id})**\nJoin @Am_Support"
+                f"**Prompt** - `{msg}`\n**Requested by [{message.from_user.first_name}](tg://user?id={message.from_user.id})**\nJoin @AM_YTSUPPORT"
             )
 
             app.send_message(
@@ -221,7 +221,7 @@ def mangadup(client, message):
             ai_image = get_ai_text(base64_image_string, text)["media_info_list"][0]["media_data"]
             message.reply_photo(
                 photo=ai_image,
-                caption=f"Hello **[{message.from_user.first_name}](tg://user?id={message.from_user.id})**\nJoin @Am_Support"
+                caption=f"Hello **[{message.from_user.first_name}](tg://user?id={message.from_user.id})**\nJoin @AM_YTSUPPORT"
             )
             # Send the original message and generated image to a channel
             app.send_message(
@@ -238,7 +238,7 @@ def mangadup(client, message):
             ai_image = get_ai_image(base64_image_string)["media_info_list"][0]["media_data"]
             message.reply_photo(
                 photo=ai_image,
-                caption=f"Requested by - **[{message.from_user.first_name}](tg://user?id={message.from_user.id})**\nJoin @Am_Support"
+                caption=f"Requested by - **[{message.from_user.first_name}](tg://user?id={message.from_user.id})**\nJoin @AM_YTSUPPORT"
             )
             # Send the original message and generated image to a channel
             app.send_message(
