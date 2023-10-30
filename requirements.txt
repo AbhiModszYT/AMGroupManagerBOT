@@ -39,4 +39,5 @@ youtube-search-python
 pyrogram
 openai
 youtube_search
+TgCrypto
 replicate
