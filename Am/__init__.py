@@ -69,6 +69,8 @@ if ENV:
     UPDATES = os.environ.get("UPDATES","AMBOTYT")
     BOT_USERNAME = os.environ.get("BOT_USERNAME","AM_YTBOTT")
     BOT_NAME = os.environ.get("BOT_NAME","Sophia")
+    EVENT_LOGS = os.environ.get("EVENT_LOGS","-1001841879487")
+    JOIN_LOGS = os.environ.get("JOIN_LOGS","-1001841879487")
     CHAT_GROUP = os.environ.get("CHAT_GROUP","AM_YTSUPPORT")
     GBANS = os.environ.get("GBANS","Logs_Gban")
     PHOTO = os.environ.get("PHOTO","https://graph.org/file/c9c43add941dd2eebdfa7.jpg")
@@ -106,6 +108,7 @@ else:
 
     INFOPIC = Config.INFOPIC
     EVENT_LOGS = Config.EVENT_LOGS
+    JOIN_LOGS = Config.JOIN_LOGS
     WEBHOOK = Config.WEBHOOK
     PORT = Config.PORT
     CERT_PATH = Config.CERT_PATH
