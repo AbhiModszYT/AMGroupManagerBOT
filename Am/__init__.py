@@ -57,25 +57,15 @@ if ENV:
         raise Exception("Please Add Hash Api key to start the bot")
 
     DB_URI = os.environ.get("DATABASE_URL","") #Sql db url
-    PHOTO = os.environ.get("PHOTO", "https://graph.org/file/2d3f35226a0d59cbb9980.jpg") # start Pic
     WORKERS = int(os.environ.get("WORKERS", 8))
     ALLOW_EXCL = os.environ.get('ALLOW_EXCL', False)
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
-
-    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "") #owner username 
-    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "AM_YTSUPPORT") #support group
-    EVENT_LOGS = os.environ.get("EVENT_LOGS", "-1001841879487") #Gbans Logs Channel/group id  
-    JOIN_LOGGER = os.environ.get("JOIN_LOGGER", "-1001841879487") #new Group join logs
-    GBANS = os.environ.get("GBANS","")#Enter Here Gbans Logs Collect
     WEBHOOK = bool(os.environ.get("WEBHOOK", False))
     CERT_PATH = os.environ.get("CERT_PATH")
     URL = os.environ.get("URL", "")  # Does not contain token
     PORT = int(os.environ.get("PORT", 5000))
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", "")
-    BOT_NAME = os.environ.get("BOT_NAME", "Morgana")
     LOAD = os.environ.get("LOAD", "").split()
     NO_LOAD = os.environ.get("NO_LOAD","").split()
-    CHAT_GROUP = os.environ.get("CHAT_GROUP","")
     UPDATES = os.environ.get("UPDATES","")
     DEL_CMDS = bool(os.environ.get("DEL_CMDS", True))
     INFOPIC = bool(os.environ.get("INFOPIC", False))
