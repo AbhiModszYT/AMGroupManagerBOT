@@ -51,7 +51,7 @@
        "required": true,
        "value": "-1001841879487"
     },
-    "JOIN_LOGS": {
+    "JOIN_LOGGER": {
        "description": "Your Bot New Group Join logs collet id ",
        "required": true,
        "value": "-1001841879487"
