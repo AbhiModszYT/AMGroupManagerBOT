@@ -1,4 +1,3 @@
-# AM Group Manager BOT
 
 <h2 align="center">
     ──「 AM Group Manager BOT 」──
