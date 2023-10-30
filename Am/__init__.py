@@ -71,6 +71,7 @@ if ENV:
     BOT_NAME = os.environ.get("BOT_NAME","Sophia")
     CHAT_GROUP = os.environ.get("CHAT_GROUP","AM_YTSUPPORT")
     GBANS = os.environ.get("GBANS","Logs_Gban")
+    PHOTO = os.environ.get("PHOTO","https://graph.org/file/c9c43add941dd2eebdfa7.jpg")
     OWNER_USERNAME = os.environ.get("OWNER_USERNAME","AM_YTBOTT")
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT","AM_YTSUPPORT")
     DEL_CMDS = bool(os.environ.get("DEL_CMDS", True))
