@@ -56,21 +56,6 @@
        "required": true,
        "value": "-1001841879487"
     },
-    "GBANS": {
-      "description": "Your gbans channel / group username without @.",
-      "required": true,
-      "value": "https://t.me/Logs_Gban"
-   },
-   "UPDATES": {
-      "description": "bot updates channel username without @",
-      "required": true,
-      "value": "https://t.me/AmBotYT"
-   },
-   "CHAT_GROUP": {
-      "description": "Add Your chatting group link like  t.me/+bjbhb to use : +bjbhb ",
-      "required": true,
-      "value": "https://t.me/AM_YTSUPPORT"
-   },
     "BOT_NAME": {
        "description": "Insert below your bot, it will appear everywhere",
        "required": true,
